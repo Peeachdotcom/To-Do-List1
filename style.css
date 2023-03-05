@@ -1,0 +1,121 @@
+/* Add custom styles here */
+
+/* Body styles */
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header styles */
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Input and button styles */
+.add-todo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem 0 0 0.25rem;
+    box-shadow: 0 0 0 1px #ced4da;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 0 0.25rem 0.25rem 0;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+
+/* List styles */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    margin-bottom: 0.5rem;
+    padding: 0.75rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+li:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+li button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+li button:hover {
+    background-color: #c82333;
+}
+
+.dragging {
+    opacity: 0.5; /* Make the dragged element semi-transparent */
+  }
+  
+  .drop-zone {
+    border: 2px dashed blue; /* Add a blue dashed border to the drop zone */
+    margin-top: 5px; /* Add some margin to separate the drop zone from the other elements */
+    margin-bottom: 5px;
+  }
+  
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    input[type="text"] {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    input[type="text"] {
+        width: 50%;
+    }
+}
